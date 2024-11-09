@@ -1,11 +1,11 @@
 import React from 'react';
 
-interface InputErrorMessage {
+interface InputErrorMessageProps {
     mensaje: string;
     tipoValidacion: 'numerico' | 'alfanumerico' | 'email' | undefined;
 }
 
-const InputErrorMessage: React.FC<InputErrorMessage> = ({ mensaje, tipoValidacion }) => {
+const InputErrorMessage: React.FC<InputErrorMessageProps> = ({ mensaje, tipoValidacion }) => {
     const getErrorMessage = () => {
         switch (tipoValidacion) {
             case 'numerico':

@@ -6,11 +6,15 @@ import App from './App';
 import MaterialUIProvider from './ui/providers/materialUIProvider';
 
 const container = document.getElementById('root');
-const root = createRoot(container!);
-root.render(
-  <React.StrictMode>
-    <MaterialUIProvider>
-      <App />
-    </MaterialUIProvider>
-  </React.StrictMode>
-);
+if (container) {
+  const root = createRoot(container);
+  root.render(
+    <React.StrictMode>
+      <MaterialUIProvider>
+        <App />
+      </MaterialUIProvider>
+    </React.StrictMode>
+  );
+} else {
+  console.error('Root container not found');
+}

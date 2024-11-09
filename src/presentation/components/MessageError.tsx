@@ -4,13 +4,13 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 
-interface MessageError{
+interface MessageErrorProps{
     mensaje: string;
     open: boolean;
     onClose: () => void;
 }
 
-const MessageError: React.FC<MessageError> = ({ mensaje, open, onClose }) => {
+const MessageError: React.FC<MessageErrorProps> = ({ mensaje, open, onClose }) => {
 
     const handleClose = (event: React.SyntheticEvent | Event, reason?: string) => {
         if (reason === 'clickaway') {
