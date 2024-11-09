@@ -1,5 +1,4 @@
 import { PostFactura } from '../../domain/useCases/facturaCase';
-import { User } from '../../domain/entities/example';
 import { FacturaRepositoryImpl } from '../../infrastructure/repositories/facturaRepository';
 import { Factura } from '../../domain/entities/factura';
 

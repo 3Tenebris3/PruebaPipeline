@@ -21,7 +21,7 @@ describe('CreateClient Component', () => {
     beforeEach(() => {
         // Obtenemos la implementación simulada de FacturaServices
         const facturaService = new FacturaServices();
-        mockPostFactura = facturaService.postFactura;
+        mockPostFactura = facturaService.postFactura as jest.Mock;
 
         render(<CreateClient />);
     });
