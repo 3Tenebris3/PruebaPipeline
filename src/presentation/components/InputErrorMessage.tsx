@@ -20,7 +20,7 @@ const InputErrorMessage: React.FC<InputErrorMessage> = ({ mensaje, tipoValidacio
     };
 
     return (
-        <div style={{ color: 'red', marginTop: '5px' }}>
+        <div className="input-error-message">
             {getErrorMessage()}
         </div>
     );

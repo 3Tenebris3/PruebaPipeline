@@ -2,7 +2,6 @@
 
 import { IFacturaRepository } from '../../application/interfaces/facturaInterface';
 import apiClient from '../apis/exampleApi';
-import { User, UserProps } from '../../domain/entities/example';
 import { Factura } from '../../domain/entities/factura';
 
 export class FacturaRepositoryImpl implements IFacturaRepository {
